@@ -1,17 +1,52 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-title >Horesta</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-searchbar  class="no-padding" color="primary"
+                 placeholder="Søg i retter">
+  </ion-searchbar>
+  <!-- dishes overview -->
+  <ion-list>
+    <ion-item-divider color="light">
+      <b>Mine Retter</b>
+    </ion-item-divider>
+
+    <ion-item-sliding>
+      <ion-item>
+        <span>
+
+        </span>
+        <span item-end>
+
+        </span>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <!-- delete -->
+        <button ion-button color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </button>
+        <!-- /delete -->
+
+        <!-- clone -->
+        <button ion-button color="light">
+          <ion-icon name="copy"></ion-icon>
+        </button>
+        <!-- /clone -->
+
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+  <!-- dishes overview -->
+
+  <!-- consume nutrients FAB -->
+  <ion-fab right bottom ion-fixed>
+    <button ion-fab color="light" color="primary"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+  <!-- /consume nutrients FAB -->
+
 </ion-content>
