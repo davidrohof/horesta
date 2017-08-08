@@ -1,0 +1,9 @@
+[{
+  "id": 1,
+  "name": "Kylling i sovs",
+  "childs": [ "Kylling", "sovs" ]
+}, {
+  "id": 2,
+  "name": "Thaibox",
+  "childs": [ "Thai", "Box" ]
+}]
